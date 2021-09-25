@@ -58,3 +58,14 @@ mutation {
   }
 }
 ```
+
+### Subscription
+Para realizar una subscription a travez de un socket
+```
+subscription {
+  launchAndWaitCookingTimer(id: 1) {
+    remainingTime
+    status
+  }
+}
+```
