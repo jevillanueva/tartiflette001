@@ -43,3 +43,18 @@ recipes {
   }
 }
 ```
+### Mutation
+Para realizar acciones de actualizado
+```
+mutation {
+  updateRecipe(input: {
+    id: 1
+    name:"Tartiflette update"
+    cookingTime: 12
+  }){
+    id
+    name
+    cookingTime
+  }
+}
+```
